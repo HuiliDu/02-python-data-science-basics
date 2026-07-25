@@ -14,11 +14,9 @@ def generate_datasets(num_samples=1000):
         "latitude": np.random.uniform(39.5, 40.5, num_samples),
         "longitude": np.random.uniform(113.5, 114.5, num_samples),
         "temperature": np.random.uniform(-10, 40, num_samples),
-        "nvdi": np.random.uniform(0, 1, num_samples),
+        "nvdi": np.random.uniform(-1, 1, num_samples),
         "elevation": np.random.uniform(0, 3000, num_samples),
-        "land_cover": np.random.choice(
-            ["forest", "urban", "agriculture", "water"], num_samples
-        ),
+        "land_cover": np.random.choice(["forest", "urban", "water"], num_samples),
         "pm2.5": np.random.uniform(0, 150, num_samples),
         "rainfall": np.random.uniform(0, 200, num_samples),
     }
